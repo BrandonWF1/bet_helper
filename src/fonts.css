@@ -5,7 +5,15 @@
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
 .coef{
-    text-shadow: 1px 2px 3px rgb(221, 255, 0);
+    text-shadow: 1px 2px 3px rgba(64, 255, 0, 0.37);
+}
+.team_name{
+    text-shadow: 1px 2px 3px rgba(102, 0, 255, 0.37);
+
+    padding: 5px;
+}
+.match_border{
+    box-shadow: 1px 2px 3px rgba(102, 0, 255, 0.37);
 }
 
 .logo_shadow{
@@ -14,4 +22,11 @@
 
 .info_light{
     text-shadow: 4px 4px 4px rgba(0, 140, 255, 0.37);
+}
+
+.team_logo{
+    width: 150px;
+    height: 120px;
+    object-fit: contain;
+    margin: 10px;
 }
