@@ -10,7 +10,7 @@ const MatchesList = () => {
 
     const dispatch = useDispatch()
     const {category} = useParams()
-    const {loading, matches, error} = useSelector(state => state.MatchesSlice)
+    const {loading, matches} = useSelector(state => state.MatchesSlice)
 
     useEffect(() => {
         dispatch(fetchMatchesThunk(category))
