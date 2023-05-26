@@ -3,8 +3,8 @@ import MatchesItem from "./MatchesItem";
 import {useParams} from "react-router-dom";
 import {fetchMatchesThunk} from "../store/AsyncThunks/fetchMatchesThunk";
 import {useDispatch, useSelector} from "react-redux";
-import logo1 from '../assets/logo.png'
-import logo2 from '../assets/beer.png'
+import Preloader from "./Preloader";
+
 
 const MatchesList = () => {
 
@@ -12,14 +12,16 @@ const MatchesList = () => {
     const {category} = useParams()
     const {loading, matches, error} = useSelector(state => state.MatchesSlice)
 
-    console.log(category)
     useEffect(() => {
         dispatch(fetchMatchesThunk(category))
-    }, [])
+    }, [category])
 
     return (
         <div>
-            {loading ? 'loading' :
+            {loading ?
+                <div className={''}>
+                <Preloader/>
+                </div> :
                 <div>
                     {matches.matches.map(match =>
                         <MatchesItem
