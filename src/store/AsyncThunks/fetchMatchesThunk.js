@@ -17,13 +17,16 @@ export const fetchMatchesThunk = createAsyncThunk('Matches/fetch',
 
 export const Pending = (state, action) => {
     state.loading = true
+    state.error=null
 }
 
 export const Fulfilled = (state, action) => {
     state.loading = false
     state.matches = action.payload
+    state.error=null
 }
 
 export const Reject = (state,action) => {
     state.error = action.payload
+    state.loading=false
 }
