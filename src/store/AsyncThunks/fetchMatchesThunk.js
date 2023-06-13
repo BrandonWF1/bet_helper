@@ -15,7 +15,7 @@ export const fetchMatchesThunk = createAsyncThunk('Matches/fetch',
     }
 )
 
-export const Pending = (state, action) => {
+export const Pending = (state) => {
     state.loading = true
     state.error=null
 }

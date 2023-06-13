@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import logo1 from '../assets/logo.png'
-import logo2 from '../assets/beer.png'
 import '../fonts.css'
 const MatchesItem = ({team1_name, team2_name, team1_percent, team2_percent, team1_logo, team2_logo, date, place, sport}) => {
 

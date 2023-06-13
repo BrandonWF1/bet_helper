@@ -3,8 +3,7 @@ import HomePage from "./pages/HomePage";
 import MatchesPage from "./pages/MatchesPage";
 import Header from "./components/Header";
 import AboutPage from "./pages/AboutPage";
-import {useEffect} from "react";
-import fetchMatches from "./utils/fetchMatches";
+
 
 function App() {
 

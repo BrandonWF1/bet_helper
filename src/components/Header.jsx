@@ -11,8 +11,10 @@ const Header = () => {
                 <div className={'flex justify-between items-center'}>
                     <div className={'w-28 flex items-center font-bold p-5 text-[40px] '}>
                         <img className={'w-full'} src={logo} alt="logo"/>
+                        <NavLink to={'/'}>
                         <span className={'pl-1 font-extrabold fontNew-en logo_shadow text-purple-400'}>BET.</span>
                         <span className={'font-extrabold fontNew-en logo_shadow leading-4 text-blue-500'}>HELPER</span>
+                        </NavLink>
                     </div>
                     <div>
                         <NavLink className={({isActive }) => `mr-4 text-3xl fontNew-ru font-bold ${isActive ? 'text-blue-400' : ''}`} to={'/matches/basketball'}>Баскетбол</NavLink>
