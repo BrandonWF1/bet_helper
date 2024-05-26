@@ -1,9 +1,11 @@
 import {combineReducers} from "redux";
 import {configureStore} from "@reduxjs/toolkit";
 import MatchesSlice from "./Slices/MatchesSlice";
+import FootballTeamsSlice from "./Slices/FootballTeamsSlice";
 
 const rootReducer = combineReducers({
-    MatchesSlice: MatchesSlice
+    MatchesSlice: MatchesSlice,
+    FootballTeamsSlice: FootballTeamsSlice,
 })
 
 const store  = configureStore({
