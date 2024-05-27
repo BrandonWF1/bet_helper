@@ -8,13 +8,11 @@ const FootballTeamsSlice = createSlice({
         loading: false,
         error: null
     },
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: builder => builder
-        .addCase(actions.fetchFootballTeamsThunk.pending,actions.Pending)
-        .addCase(actions.fetchFootballTeamsThunk.fulfilled,actions.Fulfilled)
-        .addCase(actions.fetchFootballTeamsThunk.rejected,actions.Reject)
+        .addCase(actions.fetchFootballTeamsThunk.pending, actions.Pending)
+        .addCase(actions.fetchFootballTeamsThunk.fulfilled, actions.Fulfilled)
+        .addCase(actions.fetchFootballTeamsThunk.rejected, actions.Reject)
 })
 
 export default FootballTeamsSlice.reducer

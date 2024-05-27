@@ -11,13 +11,11 @@ const MatchesSlice = createSlice({
         loading: false,
         error: null
     },
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: builder => builder
-        .addCase(actions.fetchMatchesThunk.pending,actions.Pending)
-        .addCase(actions.fetchMatchesThunk.fulfilled,actions.Fulfilled)
-        .addCase(actions.fetchMatchesThunk.rejected,actions.Reject)
+        .addCase(actions.fetchMatchesThunk.pending, actions.Pending)
+        .addCase(actions.fetchMatchesThunk.fulfilled, actions.Fulfilled)
+        .addCase(actions.fetchMatchesThunk.rejected, actions.Reject)
 })
 
 export default MatchesSlice.reducer
